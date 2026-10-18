@@ -440,7 +440,7 @@ const handleDeleteDetail = (row, index) => {
   selectedInventory.value.splice(indexOfSelected, 1)
 }
 const goSaasTip = () => {
-  ElMessageBox.alert('如需体验，请在公众号内回复：saas', '请去Saas版本体验', {
+  ElMessageBox.alert('当前版本暂不支持此功能', '功能提示', {
     confirmButtonText: '确定'
   })
   return false
