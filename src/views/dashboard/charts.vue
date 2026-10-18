@@ -1,8 +1,9 @@
 <template>
   <div class="app-container home">
+    <header class="overview-heading"><div><h1>仓库概览</h1><p>入库、出库与库存趋势</p></div><span class="demo-label">演示数据</span></header>
     <div class="station-top">
       <el-row :gutter="12" class="mt5">
-        <el-col :span="6">
+        <el-col :xs="24" :sm="12" :lg="6">
           <div class="top-item-box item-box-one" style="display: flex;">
             <div style="flex:2;height:100%;">
               <div>入库</div>
@@ -17,7 +18,7 @@
             </div>
           </div>
         </el-col>
-        <el-col :span="6">
+        <el-col :xs="24" :sm="12" :lg="6">
           <div class="top-item-box item-box-two" style="display: flex;">
             <div style="flex:2;height:100%;">
               <div>出库</div>
@@ -32,7 +33,7 @@
             </div>
           </div>
         </el-col>
-        <el-col :span="6">
+        <el-col :xs="24" :sm="12" :lg="6">
           <div class="top-item-box item-box-three" style="display: flex;">
             <div style="flex:2;height:100%;">
               <div>其他</div>
@@ -46,7 +47,7 @@
             </div>
           </div>
         </el-col>
-        <el-col :span="6">
+        <el-col :xs="24" :sm="12" :lg="6">
           <div class="top-item-box item-box-four" style="display: flex;">
             <div style="flex:2;height:100%;">
               <div>库存预警</div>
@@ -64,7 +65,7 @@
     </div>
     <div class="station-middle">
       <el-row :gutter="12">
-        <el-col :span="6">
+        <el-col :xs="24" :sm="12" :lg="6">
           <el-card class="box-card" shadow="never">
             <div class="card-title">仓库货物占比</div>
             <div style="height: calc(100% - 30px);">
@@ -73,7 +74,7 @@
             </div>
           </el-card>
         </el-col>
-        <el-col :span="18">
+        <el-col :xs="24" :sm="24" :lg="18">
           <el-card class="box-card" shadow="never">
             <div style="display:flex;justify-content: space-between;align-items: center;">
               <div class="card-title">生产入库趋势</div>
@@ -92,7 +93,7 @@
     </div>
     <div class="station-bottom">
       <el-row :gutter="12">
-        <el-col :span="6">
+        <el-col :xs="24" :sm="12" :lg="6">
           <el-card class="box-card" shadow="never">
             <div class="card-title">近7日销售出库</div>
             <div style="height: calc(100% - 30px);">
@@ -100,7 +101,7 @@
             </div>
           </el-card>
         </el-col>
-        <el-col :span="6">
+        <el-col :xs="24" :sm="12" :lg="6">
           <el-card class="box-card" shadow="never">
             <div class="card-title">近7日领料出库</div>
             <div style="height: calc(100% - 30px);">
@@ -108,7 +109,7 @@
             </div>
           </el-card>
         </el-col>
-        <el-col :span="6">
+        <el-col :xs="24" :sm="12" :lg="6">
           <el-card class="box-card" shadow="never">
             <div class="card-title">近7日移库</div>
             <div style="height: calc(100% - 30px);">
@@ -118,7 +119,7 @@
             </div>
           </el-card>
         </el-col>
-        <el-col :span="6">
+        <el-col :xs="24" :sm="12" :lg="6">
           <el-card class="box-card" shadow="never">
             <div class="card-title">近7日退货入库</div>
             <div style="height: calc(100% - 30px);">
@@ -209,46 +210,31 @@ function initTime() {
 <style scoped>
 .app-container {
   min-height: calc(100vh - 84px);
-  padding: 12px 12px 0 12px;
+  padding: 24px;
 }
 
 .top-item-box {
   height: 160px;
   background: #fff;
   margin-bottom: 12px;
-  border-radius: 12px;
-  color: #fff;
+  border-radius: 6px;
+  border: 1px solid #d1d9e0;
+  color: #1f2328;
   padding: 16px;
 }
 
-.item-box-one {
-  background: linear-gradient(30deg, #1a94db, #4db1eb, #7acaf9);
-  box-shadow: 0 4px 12px #8ed2fa;
-}
-
-.item-box-two {
-  background: linear-gradient(30deg, #c7a327, #d5ba47, #e3cf65);
-  box-shadow: 0 4px 12px #ece7cd;
-}
-
-.item-box-three {
-  background: linear-gradient(30deg, #6365f7, #9177f1, #cd8ee9);
-  box-shadow: 0 4px 12px #dcc9e6;
-}
-
-.item-box-four {
-  background: linear-gradient(30deg, #ed3a60, #f1557a, #f67da0);
-  box-shadow: 0 4px 12px #e7cfd6;
+.item-box-one, .item-box-two, .item-box-three, .item-box-four {
+  background: #fff;
 }
 
 .box-card {
   height: 400px;
   margin-bottom: 12px;
   background-color: #fff;
-  border-color: #ebe6f5;
+  border-color: #d1d9e0;
 }
 
-.box-card >>> .el-card__body {
+.box-card :deep(.el-card__body) {
   height: 100%;
 }
 
@@ -259,12 +245,10 @@ function initTime() {
   align-items: center;
 }
 
-.card-title::before {
-  content: '';
-  height: 70%;
-  width: 5px;
-  background: #3671e8;
-  margin-right: 8px;
-}
+.overview-heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 24px; }
+.overview-heading h1 { margin: 0 0 8px; font-size: 24px; font-weight: 600; color: #1f2328; }
+.overview-heading p { margin: 0; font-size: 14px; color: #59636e; }
+.demo-label { border: 1px solid #d1d9e0; border-radius: 20px; padding: 4px 10px; font-size: 12px; color: #59636e; white-space: nowrap; }
+@media (max-width: 767px) { .app-container { padding: 16px; } }
 
 </style>

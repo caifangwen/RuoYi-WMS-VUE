@@ -7,7 +7,7 @@
             <span style="font-size: large;font-weight: bold">更多内容</span>
           </div>
           <div>
-            <div style="font-size:20px;line-height: 50px;background: linear-gradient(to right, red, blue);-webkit-background-clip: text;color: transparent;">
+            <div style="font-size:14px;line-height: 32px;color: #333d47;">
               <div>
                 <span style="font-size: large;font-weight: bold">v2 advance预览：</span><a href="http://kucun.ichengle.top/" target="_blank">http://kucun.ichengle.top/</a>
               </div>

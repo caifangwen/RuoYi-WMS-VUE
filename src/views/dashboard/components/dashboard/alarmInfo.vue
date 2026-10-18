@@ -136,7 +136,7 @@ onMounted(()=>{
   .alarm-item {
     padding: 12px 0;
     border-bottom: 1px solid;
-    border-image: linear-gradient(90deg, #00d0fe 0%, #286be9 50%, #00d0fe 100%) 2 2 2 2;;
+    border-bottom-color: #303d50;
 
     .alarm-name {
       // color: var(--current-color);

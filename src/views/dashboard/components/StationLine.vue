@@ -123,20 +123,11 @@ function setOptions() {
       },
       lineStyle: {
         // color: '#FF005A',
-        width: 4
+        width: 2
       },
       areaStyle: {
-        opacity: 0.6,
-        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-          {
-            offset: 0,
-            color: props.itemColor
-          },
-          {
-            offset: 1,
-            color: 'rgba(255, 255, 255, .255)'
-          }
-        ])
+        opacity: 0.08,
+        color: props.itemColor
       },
       smooth: true,
       type: 'line',

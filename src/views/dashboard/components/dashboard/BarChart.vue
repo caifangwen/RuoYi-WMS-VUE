@@ -148,10 +148,7 @@ function initChart() {
       data: props.yData,
       animationDuration,
       itemStyle: {
-        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-          { offset: 1, color: props.barColor[0] },
-          { offset: 0, color: props.barColor[1] },
-        ])
+        color: props.barColor[0]
       }
     }]
   })

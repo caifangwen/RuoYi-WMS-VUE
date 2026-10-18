@@ -154,16 +154,7 @@ function setOptions({ yesterdayData, todayData } = {}) {
         animationDuration: 1500,
         animationEasing: 'cubicInOut',
         areaStyle: {
-          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-            {
-              offset: 0,
-              color: '#c59af4'
-            },
-            {
-              offset: 1,
-              color: 'rgba(197, 154, 244, 0.2)'
-            }
-          ])
+          color: '#c59af4'
         }
       },
       {
@@ -178,16 +169,7 @@ function setOptions({ yesterdayData, todayData } = {}) {
         animationDuration: 1500,
         animationEasing: 'quadraticOut',
         areaStyle: {
-          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-            {
-              offset: 0,
-              color: '#00d0fe'
-            },
-            {
-              offset: 1,
-              color: 'rgba(0, 208, 254, 0.2)'
-            }
-          ])
+          color: '#00d0fe'
         }
       }
     ]

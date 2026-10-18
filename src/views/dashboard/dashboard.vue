@@ -767,10 +767,10 @@ onBeforeUnmount(() => {
 }
 
 .board-title {
-  background-image: linear-gradient(to top, #2571e9, #00e7ff);
+  background-image: none;
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  color: #c9d1d9;
   font-size: 40px;
   font-weight: bold;
   letter-spacing: 8px;
@@ -823,7 +823,7 @@ onBeforeUnmount(() => {
   border-radius: 10px;
   display: inline-block;
   margin-right: 6px;
-  background: linear-gradient(to bottom, #00d1ff, #2869e8);
+  background: #6e96bd;
 }
 
 .box-content {

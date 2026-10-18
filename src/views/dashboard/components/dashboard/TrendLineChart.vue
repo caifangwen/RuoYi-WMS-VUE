@@ -150,16 +150,7 @@ function initChart() {
       },
       animationDuration,
       areaStyle: {
-        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-          {
-            offset: 0,
-            color: 'rgb(0, 221, 255)'
-          },
-          {
-            offset: 1,
-            color: 'rgba(77, 119, 255, .2)'
-          }
-        ]),
+        color: 'rgb(0, 221, 255)',
       },
     }]
   })

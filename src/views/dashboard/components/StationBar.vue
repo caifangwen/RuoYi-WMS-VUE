@@ -149,10 +149,7 @@ function initChart() {
       data: props.chartData.yData,
       animationDuration,
       itemStyle: {
-        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-          { offset: 1, color: props.barColor[0] },
-          { offset: 0, color: props.barColor[1] },
-        ])
+        color: props.barColor[0]
       },
       markLine: {
         data: [{ type: 'average', name: 'Avg' }]

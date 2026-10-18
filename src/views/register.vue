@@ -160,7 +160,7 @@ getCode();
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-image: url("../assets/images/login-background.jpg");
+  background: #f6f8fa;
   background-size: cover;
 }
 .title {
@@ -172,7 +172,8 @@ getCode();
 .register-form {
   border-radius: 6px;
   background: #ffffff;
-  width: 400px;
+  width: min(400px, calc(100vw - 32px));
+  border: 1px solid #d1d9e0;
   padding: 25px 25px 5px 25px;
   .el-input {
     height: 40px;
@@ -207,7 +208,7 @@ getCode();
   bottom: 0;
   width: 100%;
   text-align: center;
-  color: #fff;
+  color: #59636e;
   font-family: Arial;
   font-size: 12px;
   letter-spacing: 1px;
